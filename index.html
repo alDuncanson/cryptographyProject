@@ -40,16 +40,19 @@
           <a class="js-scroll-trigger" href="#history">History</a>
         </li>
         <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#evolution">Evolution</a>
+        </li>
+        <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#advantages">Advantages/Disadvantages</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#encryptDemo">Encryption Demonstration</a>
+          <a class="js-scroll-trigger" href="#encryptDemo">Encryption</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#decryptDemo">Decryption Demonstration</a>
+          <a class="js-scroll-trigger" href="#decryptDemo">Decryption</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#contact">Contact</a>
+          <a class="js-scroll-trigger" href="#github">Github</a>
         </li>
       </ul>
     </nav>
@@ -72,8 +75,32 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h2>History</h2>
-            <p class="lead mb-5">The usage of shift ciphers, also known as a Caesar cipher
-            can be traced back all the way to the times of Julius Caesar. </p>
+            <p class="lead mb-5">
+              Alternative to transposition ciphers is substitution ciphers that act complementary to transposition. In transposition, each letter retains its identity but changes positions, whereas in substitution each letter changes its identity but retains its position. One of the earliest descriptions of encryption by substitution appears in the Kama Sutra written in the fourth century AD. It mentions mlecchita-vikalpa, the art of secret writing, was used to help women conceal details of their communication partners. One of the recommended techniques is to pair letters of the alphabet at random and substitute each letter in the alphabet with its partner.
+            </p>
+            <p class="lead mb-5">
+              The first documented use of a substitution cipher for military purposes appears in Julius Caesar’s Gallic Wars. Caesar sent a message to Cicero where the substitution replaced Roman letters with Greek letters, rendering the message useless if fallen into enemy hands. Caesar used secret writing frequently and came up with variations of substitution ciphers. The most famous and only documented substitution cipher he used is called the Caesar shift cipher. For this cipher, Caesar simply replaced each letter in the message with the letter 3 places further down the alphabet. In other words, it shifted the alphabet three letters. Although it is mentioned that he uses a shift of 3, any shift between 1 and 25 generates 25 distinct ciphers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Evolution -->
+    <section class="content-section bg-light" id="evolution">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Evolution</h2>
+            <p class="lead mb-5">
+              Despite the success of these types of ciphers throughout history, simple monoalphabetic substitution ciphers are easy to break with time and the proper techniques. The brute force method or trial and error could be used to break the Caesar cipher and application of frequency analysis in most other cases. Because of these weaknesses, stronger substitutions ciphers were developed. These ciphers were known as polyalphabetic ciphers that use multiple substitution alphabets.
+            </p>
+            <p class="lead mb-5">
+              The first known polyalphabetic cipher created was the Alberti Cipher that used a mixed alphabet for encryption, which would switch to a different ciphertext alphabet at random points in the text. These points were marked in the code by an uppercase letter and keys were encoded on sets of cipher discs. Building on this work, the Vigenere Cipher was created. It is the most well known polyalphabetic substitution cipher. It made use of up to 26 different ciphertext alphabets and remained ‘The Unbreakable Cipher’ until 1854.
+            </p>
+            <p class="lead mb-5">
+              Today, even the strongest substitution code wouldn’t stand up to five minutes of intense hacking. However, they did pave the way for the development of contemporary methods of encryption and cryptographic analysis. For example, the concepts of modular arithmetic and residues were added to create the Affine Shift Cipher. Cryptography uses the concept of continuous improvement by analyzing strengths and weaknesses of ciphers. Meaning each new cipher builds off the previous one trying to improve upon the weaknesses and build up the strengths.
+            </p>
           </div>
         </div>
       </div>
@@ -96,7 +123,14 @@
               Although, a shift cipher's simplicity does bring with it some
               drawbacks. The security that a shift cipher provides is minimal,
               and can be easily cracked using frequency analysis. Frequency
-              analysis
+              analysis is a technique where you examine the frequency of which
+              certain letters appear in a ciphertext. This is done because
+              for example, in the English language, the most frequent
+              letters are E, T, A, and O. The most infrequent letters are Z, Q,
+              and X. Also, the most common pairs, known as bigrams, of letters
+              are TH, ER, ON, and AN. Lastly the most common repeat pairs are SS,
+              EE, TT, and FF. Knowing this, one could look at a cipher text phrase
+              such as
             </p>
           </div>
         </div>
@@ -109,10 +143,11 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h2>Encryption Demonstration</h2>
-            <!--<video width="800" height="600" controls>
-            <source src="compressedEncrypt.mp4" type="video/mp4">
-            </video>-->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LoliXi6Up_Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LoliXi6Up_Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen"
+        msallowfullscreen="msallowfullscreen"
+        oallowfullscreen="oallowfullscreen"
+        webkitallowfullscreen="webkitallowfullscreen"></iframe>
           </div>
         </div>
       </div>
@@ -124,17 +159,18 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h2>Decryption Demonstration</h2>
-            <!--<video width="800" height="600" controls>
-            <source src="compressedDecrypt.mp4" type="video/mp4">
-            </video>-->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/UcGYnW8XBYE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UcGYnW8XBYE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen"
+        msallowfullscreen="msallowfullscreen"
+        oallowfullscreen="oallowfullscreen"
+        webkitallowfullscreen="webkitallowfullscreen"></iframe>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer text-center">
+    <footer class="footer text-center" id="github">
       <div class="container">
         <ul class="list-inline mb-5">
           <li class="list-inline-item">

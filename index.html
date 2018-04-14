@@ -46,6 +46,9 @@
           <a class="js-scroll-trigger" href="#advantages">Advantages/Disadvantages</a>
         </li>
         <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#ring">Decoder Ring</a>
+        </li>
+        <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#encryptDemo">Encryption</a>
         </li>
         <li class="sidebar-nav-item">
@@ -124,14 +127,29 @@
               drawbacks. The security that a shift cipher provides is minimal,
               and can be easily cracked using frequency analysis. Frequency
               analysis is a technique where you examine the frequency of which
-              certain letters appear in a ciphertext. This is done because
-              for example, in the English language, the most frequent
+              certain letters appear in a ciphertext. For example, in the English language, the most frequent
               letters are E, T, A, and O. The most infrequent letters are Z, Q,
               and X. Also, the most common pairs, known as bigrams, of letters
               are TH, ER, ON, and AN. Lastly the most common repeat pairs are SS,
-              EE, TT, and FF. Knowing this, one could look at a cipher text phrase
-              such as
+              EE, TT, LL, and FF. Knowing this, one could look at a cipher text phrase
+              such as MJQQT BTWQI (HELLO WORLD) and notice the repeat pair QQ. This repeat pair
+              is then most likely one of the common repeat pairs, so Q is either
+              S, E, T, L, or F. Also, we can see that T is repeated in both words
+              here, so it is safe to assume it is a vowel so your possibilities are slimmed down
+              tremendously and would be easier to use a brute force approach. 
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Decoder Ring -->
+    <section class="content-section bg-light" id="ring">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Decoder Ring</h2>
+            <img src="img/ring.jpg" width="532" height="400" style="transform: rotate(90deg); position: relative; top: 80px;"/>
           </div>
         </div>
       </div>
